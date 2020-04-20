@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
-
-const routes: Routes = [];
+import { ServerModule } from '@angular/platform-server';
+import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
+import { AppComponent } from './app.component';
+import { AppModule } from './app.module';
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [AppModule, ServerModule, ModuleMapLoaderModule],
+  bootstrap: [AppComponent]
 })
-export class AppRoutingModule { }
+export class AppServerModule { }
