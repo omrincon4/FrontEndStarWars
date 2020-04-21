@@ -4,4 +4,4 @@ Usted ha sido contratado por una empresa de entretenimiento que quiere generar u
 
 Se requiere que usted haga una exploración del api REST que entrega la empresa, y proponga una forma organizada de presentar esta información para sus usuarios finales en la aplicación WEB, la compañía requiere que adicional a mostrar la información sobre las películas, la aplicación pueda permitir la búsqueda por nombre de película o año.
 
-El backend se encuentra desplegado en un api REST que usted puede consumir; este se encuentra desplegado en https://swapi.co/api/ puede encontrar la documentación del api en el siguiente enlace https://swapi.co/documentation#root
+El backend se encuentra desplegado en un api REST que usted puede consumir; este se encuentra desplegado en http://swapi.py4e.com/ puede encontrar la documentación del api en el siguiente enlace https://swapi.co/documentation#root
