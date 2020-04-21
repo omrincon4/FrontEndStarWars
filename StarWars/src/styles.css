@@ -12,3 +12,27 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+#barra_nav ul{
+   list-style-type: none;
+   text-align: center;
+}
+
+#barra_nav li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+
+#barra_nav li a {
+   padding: 2px 7px 2px 7px;
+   color: #FFFFFF;
+   background-color: #000000;
+   border: 1px solid #FFFF00;
+   text-decoration: none;
+}
+
+#barra_nav li a:hover{
+   background-color: #333333;
+   color: #ffffff;
+}
