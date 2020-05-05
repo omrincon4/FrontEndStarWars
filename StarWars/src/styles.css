@@ -1,38 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
-a {
-  color: #0366d6;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-code {
-  color: #e01a76;
+html {
+    font-family: 'Roboto', sans-serif;
+    background: black;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.loading {
+    color: white;
 }
 
-#barra_nav ul{
-   list-style-type: none;
-   text-align: center;
+/* Estilos de la barra de navegacion */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(24, 23, 24, 0.9);
 }
 
-#barra_nav li{
-   display: inline;
-   text-align: center;
-   margin: 0 10px 0 0;
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 24px;
+    font-size: 20px;
 }
 
-#barra_nav li a {
-   padding: 2px 7px 2px 7px;
-   color: #FFFFFF;
-   background-color: #000000;
-   border: 1px solid #FFFF00;
-   text-decoration: none;
+nav a:hover {
+    color: rgba(223, 220, 52, 0.9);
 }
 
-#barra_nav li a:hover{
-   background-color: #333333;
-   color: #ffffff;
+/* Estilos para la seccion */
+
+main {
+    margin-top: 31px;
+    width: 100%;
+    height: 93vh;
+    background-image: url("assets/images/bg-star.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+/* Estilos del footer */
+footer {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6vh;
+    background: rgba(24, 23, 24, 0.9);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
