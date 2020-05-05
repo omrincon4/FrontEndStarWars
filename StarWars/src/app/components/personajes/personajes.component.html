@@ -1,0 +1,24 @@
+<div class="contentContainer">
+    <h1>{{title}}</h1>
+    <br>
+    <input #search type="text" name="search" placeholder="Busqueda..." (keyup.enter)="onFindStarpeople(search.value)"/>
+    <br>
+
+    <div *ngIf="names.length == 0"
+        class="loading">
+        Cargando...
+    </div>
+
+    <div *ngIf="names.length > 0">
+        <div class="infoContainer">
+            <h2>{{starperson.name}}</h2>
+            <hr>
+            <b><p>Height: {{starperson.height}}</p></b>
+            <b><p>Skin color: {{starperson.skin_color}}</p></b>
+            <b><p>Birth year: {{starperson.birth_year}}</p></b>
+            <b><p>Mass: {{starperson.mass}}</p></b>
+            <b><p>Gender: {{starperson.gender}}</p></b>
+        </div>
+    </div>
+</div>
+
