@@ -1,0 +1,23 @@
+<div class="contentContainer">
+    <h1>{{title}}</h1>
+    <br>
+    <input #search type="text" name="search" placeholder="Busqueda..." (keyup.enter)="onFindSpecie(search.value)"/>
+    <br>
+
+    <div *ngIf="names.length == 0"
+        class="loading">
+        Cargando...
+    </div>
+
+    <div *ngIf="names.length > 0">
+        <div class="infoContainer">
+            <h2>{{specie.name}}</h2>
+            <hr>        
+            <b><p>languege: {{specie.language}}</p></b>
+            <b><p>Classification: {{specie.classification}}</p></b>
+            <b><p>Average height: {{specie.average_height}}</p></b>
+            <b><p>Designation: {{specie.designation}}</p></b>
+            <b><p>Average lifespan: {{specie.average_lifespan}}</p></b>
+        </div>
+    </div>  
+</div>
