@@ -1,0 +1,23 @@
+<div class="contentContainer">
+    <h1>{{title}}</h1>
+    <br>
+    <input #search type="text" name="search" placeholder="Busqueda..." (keyup.enter)="onFindMovie(search.value)"/>
+    <br>
+
+    <div *ngIf="names.length == 0"
+        class="loading">
+        Cargando...
+    </div>
+
+    <div *ngIf="names.length > 0">
+        <div class="infoContainer">
+            <h2>{{movie.title}}</h2>
+            <hr>        
+            <b><p>Episode id: {{movie.episode_id}}</p></b>
+            <b><p>Opening Crawl: {{movie.opening_crawl}}</p></b>
+            <b><p>Director: {{movie.director}}</p></b>
+            <b><p>Producer: {{movie.producer}}</p></b>
+            <b><p>Release Date: {{movie.release_date}}</p></b>
+        </div>
+    </div>  
+</div>
